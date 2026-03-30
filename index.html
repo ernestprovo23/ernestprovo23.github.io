@@ -3,225 +3,481 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ernest Provo - Full Stack Developer & AI Engineer</title>
+    <title>Ernest Provo — CEO & Fractional CAIO | AI Systems Architect</title>
+    <meta name="description" content="CEO of Data Science & Engineering Experts. Fractional Chief AI Officer. Building production-grade private AI systems, trading infrastructure, and data platforms for mid-market companies.">
+    <meta property="og:title" content="Ernest Provo — CEO & Fractional CAIO">
+    <meta property="og:description" content="Production AI systems architect. Founder of DSE. Available for Fractional CAIO engagements.">
+    <meta property="og:url" content="https://ernestprovo23.github.io">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-container">
-                <h1 class="nav-logo">Ernest Provo</h1>
+                <span class="nav-logo">EP</span>
                 <ul class="nav-menu">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#oss">Open Source</a></li>
+                    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
                 </ul>
+                <button class="nav-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- Hero -->
         <section id="hero">
+            <div class="hero-bg"></div>
             <div class="hero-content">
-                <h1>Full Stack Developer & AI Engineer</h1>
-                <p>Building intelligent systems with Python, TypeScript, and cutting-edge AI technologies</p>
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for Fractional CAIO Engagements
+                </div>
+                <h1>Ernest Provo</h1>
+                <h2 class="hero-subtitle">CEO & Fractional Chief AI Officer</h2>
+                <p class="hero-desc">
+                    I build production-grade AI systems that generate measurable ROI — not proofs of concept.
+                    Founder of <strong>Data Science &amp; Engineering Experts (DSE)</strong>, Atlanta, GA.
+                    Specializing in private AI deployment, algorithmic trading infrastructure, and
+                    federal data platforms.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">37+</span>
+                        <span class="stat-label">Production AI Products</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3×</span>
+                        <span class="stat-label">Avg Client ROI</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">$300K+</span>
+                        <span class="stat-label">Federal Pipeline</span>
+                    </div>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="https://github.com/ernestprovo23" class="btn btn-secondary">
+                    <a href="#projects" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-secondary">Engage Fractionally</a>
+                    <a href="https://github.com/ernestprovo23" class="btn btn-ghost" target="_blank" rel="noopener">
                         <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-code">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">ai_deployment.py</span>
+                    </div>
+                    <pre class="code-body"><code><span class="c"># Production AI — on-prem, sovereign, measurable</span>
+<span class="kw">from</span> dse <span class="kw">import</span> PrivateAIStack, ROITracker
+
+stack = PrivateAIStack(
+    model=<span class="s">"llama-3.3-70b"</span>,
+    deployment=<span class="s">"on-premise"</span>,
+    compliance=[<span class="s">"HIPAA"</span>, <span class="s">"CMMC"</span>, <span class="s">"SOC2"</span>],
+    data_leaves_org=<span class="kw">False</span>
+)
+
+<span class="c"># Week 1: baseline → Week 12: 3× ROI</span>
+tracker = ROITracker(stack)
+tracker.run_90_day_engagement()</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div class="container">
+                <div class="section-label">Background</div>
+                <h2>Builder. Executive. Engineer.</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I'm the CEO and founder of <strong>Data Science &amp; Engineering Experts, Inc.</strong> —
+                            an Atlanta-based firm delivering AI systems, observability platforms, and data engineering
+                            for mid-market companies and federal agencies.
+                        </p>
+                        <p>
+                            My edge is writing production code, not just strategy decks. I've shipped
+                            algorithmic trading systems, private LLM deployments, and federal data pipelines
+                            that run 24/7 in real environments with real stakes.
+                        </p>
+                        <p>
+                            I'm available as a <strong>Fractional Chief AI Officer</strong> for companies that need
+                            senior AI leadership and hands-on implementation — without the $300K+ full-time overhead.
+                            Typical engagement: 90-day sprints, defined deliverables, measurable outcomes.
+                        </p>
+                        <div class="about-tags">
+                            <span class="tag">Fractional CAIO</span>
+                            <span class="tag">Private AI Deployment</span>
+                            <span class="tag">Federal Contracting</span>
+                            <span class="tag">NAICS 541511 · 541512 · 541519</span>
+                            <span class="tag">CMMC Level 2</span>
+                        </div>
+                    </div>
+                    <div class="about-cards">
+                        <div class="about-card">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <strong>Data Science &amp; Engineering Experts</strong>
+                                <span>CEO &amp; Founder · Atlanta, GA</span>
+                            </div>
+                        </div>
+                        <div class="about-card">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <strong>Fractional CAIO</strong>
+                                <span>90-day AI transformation engagements</span>
+                            </div>
+                        </div>
+                        <div class="about-card">
+                            <i class="fas fa-shield-halved"></i>
+                            <div>
+                                <strong>Federal Contractor</strong>
+                                <span>SAM.gov registered · Active proposals</span>
+                            </div>
+                        </div>
+                        <div class="about-card">
+                            <i class="fas fa-fork"></i>
+                            <div>
+                                <strong>OSS Contributor</strong>
+                                <span>Apache DataFusion · Polars · Dask · Arrow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise -->
+        <section id="expertise">
+            <div class="container">
+                <div class="section-label">Technical Depth</div>
+                <h2>Where I Build</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-card featured">
+                        <div class="expertise-icon"><i class="fas fa-robot"></i></div>
+                        <h3>Private AI & LLM Systems</h3>
+                        <p>On-premise and air-gapped LLM deployments. RAG pipelines, agent orchestration, fine-tuning, and production inference at scale. Zero data egress. Full compliance.</p>
+                        <div class="expertise-stack">
+                            <span>LLaMA 3</span><span>Ollama</span><span>LangChain</span><span>FastAPI</span><span>Claude API</span><span>OpenAI</span>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i class="fas fa-chart-candlestick"></i></div>
+                        <h3>Algorithmic Trading Systems</h3>
+                        <p>Production trading infrastructure with options analytics, multi-strategy engines, dynamic risk management, and real-time portfolio optimization.</p>
+                        <div class="expertise-stack">
+                            <span>Python</span><span>MongoDB</span><span>Alpaca API</span><span>Docker</span><span>AWS Lambda</span>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>Cloud & Data Infrastructure</h3>
+                        <p>AWS-native architectures: ECS, Lambda, RDS, S3, CloudWatch. Self-hosted Grafana observability. CI/CD pipelines. Infrastructure as code.</p>
+                        <div class="expertise-stack">
+                            <span>AWS</span><span>Terraform</span><span>Docker</span><span>k3s</span><span>Grafana</span><span>Jenkins</span>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i class="fas fa-landmark"></i></div>
+                        <h3>Federal Data Platforms</h3>
+                        <p>SAM.gov pipeline automation, proposal intelligence systems, CMMC-aligned architectures, and government data processing at scale.</p>
+                        <div class="expertise-stack">
+                            <span>Python</span><span>MongoDB</span><span>AWS GovCloud</span><span>CMMC</span><span>ITAR</span>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Full-Stack Product Engineering</h3>
+                        <p>React/TypeScript frontends, FastAPI backends, SaaS architectures, and multi-tenant platforms from zero to production.</p>
+                        <div class="expertise-stack">
+                            <span>React</span><span>TypeScript</span><span>FastAPI</span><span>PostgreSQL</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+                        <h3>Analytics & Observability</h3>
+                        <p>37-product data observability suite. Custom Grafana dashboards, FinOps tooling, cost analysis, and real-time system health monitoring.</p>
+                        <div class="expertise-stack">
+                            <span>Grafana</span><span>CloudWatch</span><span>Pandas</span><span>dbt</span><span>Apache Arrow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-badges">
+                    <div class="badge-group">
+                        <span class="badge-label">Languages</span>
+                        <img src="https://skillicons.dev/icons?i=python,typescript,javascript,bash,rust,go&theme=dark" alt="Python, TypeScript, JavaScript, Bash, Rust, Go" loading="lazy">
+                    </div>
+                    <div class="badge-group">
+                        <span class="badge-label">Infrastructure</span>
+                        <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,nginx,linux&theme=dark" alt="AWS, Docker, Kubernetes, Terraform, Nginx, Linux" loading="lazy">
+                    </div>
+                    <div class="badge-group">
+                        <span class="badge-label">Data & AI</span>
+                        <img src="https://skillicons.dev/icons?i=mongodb,postgres,redis,grafana,pytorch,fastapi&theme=dark" alt="MongoDB, PostgreSQL, Redis, Grafana, PyTorch, FastAPI" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <div class="container">
+                <div class="section-label">Production Work</div>
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+
+                    <div class="project-card featured-project">
+                        <div class="project-badge">Flagship</div>
+                        <div class="project-header">
+                            <h3>DSEalgo v2 — Algorithmic Trading Platform</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/ernestprovo23/DSEalgo_v2" class="project-link" target="_blank" rel="noopener" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p>Production multi-strategy trading system with options analytics, dynamic risk management circuit breakers, portfolio optimization, and real-time P&L tracking. Runs 24/7 on AWS with self-hosted Grafana observability.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">AWS Lambda</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Alpaca API</span>
+                            <span class="tech-tag">Grafana</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Foodee — AI Meal Planning SaaS</h3>
+                            <div class="project-links">
+                                <a href="https://thedataexperts.us" class="project-link" target="_blank" rel="noopener" aria-label="Live site">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p>Full-stack SaaS product with tiered subscriptions (Free → Enterprise $99/mo), AI-powered meal intelligence, referral engine, and rate-limited API gateway. Live in beta.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>FedGov Intelligence Pipeline</h3>
+                        </div>
+                        <p>Automated federal contracting pipeline that ingests SAM.gov opportunities, grades them with Claude AI, generates proposal documents, and tracks submissions — end-to-end from discovery to delivery.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Claude API</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Google Sheets API</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>DSE Company Website</h3>
+                            <div class="project-links">
+                                <a href="https://thedataexperts.us" class="project-link" target="_blank" rel="noopener" aria-label="Live site">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p>Production marketing site with pre-rendered SEO, structured data schema, modular React routing, lazy-loaded bundles, and 37-service product catalog. Deployed on AWS S3 + CloudFront.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">AWS CloudFront</span>
+                            <span class="tech-tag">SEO</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>AWS Infrastructure Manager</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/ernestprovo23/aws_configure" class="project-link" target="_blank" rel="noopener" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p>Comprehensive AWS configuration toolkit: FinOps cost analysis, resource auditing, budget monitoring, Grafana observability deployment, GitHub org security hardening, and IAM automation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AWS Boto3</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">GitHub API</span>
+                            <span class="tech-tag">ECS</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>DataBook — Data Engineering Reference</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/ernestprovo23/databook" class="project-link" target="_blank" rel="noopener" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p>Production-grade data engineering patterns, pipeline templates, and best practices. A living reference for ETL/ELT design, schema versioning, and distributed processing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Apache Arrow</span>
+                            <span class="tech-tag">dbt</span>
+                            <span class="tech-tag">Polars</span>
+                            <span class="tech-tag">DataFusion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OSS Contributions -->
+        <section id="oss">
+            <div class="container">
+                <div class="section-label">Open Source</div>
+                <h2>OSS Contributions</h2>
+                <p class="section-desc">Active contributor to the modern data stack ecosystem.</p>
+                <div class="oss-grid">
+                    <a href="https://github.com/apache/datafusion" class="oss-card" target="_blank" rel="noopener">
+                        <div class="oss-icon"><i class="fas fa-bolt"></i></div>
+                        <div class="oss-info">
+                            <strong>Apache DataFusion</strong>
+                            <span>SQL query engine in Rust</span>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square oss-arrow"></i>
+                    </a>
+                    <a href="https://github.com/pola-rs/polars" class="oss-card" target="_blank" rel="noopener">
+                        <div class="oss-icon"><i class="fas fa-database"></i></div>
+                        <div class="oss-info">
+                            <strong>Polars</strong>
+                            <span>Blazing fast DataFrame library</span>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square oss-arrow"></i>
+                    </a>
+                    <a href="https://github.com/dask/dask" class="oss-card" target="_blank" rel="noopener">
+                        <div class="oss-icon"><i class="fas fa-diagram-project"></i></div>
+                        <div class="oss-info">
+                            <strong>Dask</strong>
+                            <span>Parallel computing with task scheduling</span>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square oss-arrow"></i>
+                    </a>
+                    <a href="https://github.com/apache/arrow" class="oss-card" target="_blank" rel="noopener">
+                        <div class="oss-icon"><i class="fas fa-arrows-left-right"></i></div>
+                        <div class="oss-info">
+                            <strong>Apache Arrow</strong>
+                            <span>Universal columnar data format</span>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square oss-arrow"></i>
+                    </a>
+                    <a href="https://github.com/biopython/biopython" class="oss-card" target="_blank" rel="noopener">
+                        <div class="oss-icon"><i class="fas fa-dna"></i></div>
+                        <div class="oss-info">
+                            <strong>Biopython</strong>
+                            <span>Biological computation tools</span>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square oss-arrow"></i>
+                    </a>
+                    <a href="https://github.com/galaxyproject/galaxy" class="oss-card" target="_blank" rel="noopener">
+                        <div class="oss-icon"><i class="fas fa-flask"></i></div>
+                        <div class="oss-info">
+                            <strong>Galaxy</strong>
+                            <span>Data intensive science platform</span>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square oss-arrow"></i>
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="about">
+        <!-- GitHub Stats -->
+        <section id="stats">
             <div class="container">
-                <h2>About Me</h2>
-                <p>I'm a versatile developer specializing in AI/ML applications, algorithmic trading systems, and government contracting solutions. With expertise spanning from backend Python development to modern TypeScript frontends, I build robust, scalable systems that solve real-world problems.</p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <div class="container">
-                <h2>Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Languages</h3>
-                        <div class="skills-list">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">R</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">Shell/Bash</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-robot"></i> AI/ML</h3>
-                        <div class="skills-list">
-                            <span class="skill-tag">OpenAI API</span>
-                            <span class="skill-tag">LLMs</span>
-                            <span class="skill-tag">GPT Integration</span>
-                            <span class="skill-tag">AI Agents</span>
-                            <span class="skill-tag">Machine Learning</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-chart-line"></i> Trading</h3>
-                        <div class="skills-list">
-                            <span class="skill-tag">Algorithmic Trading</span>
-                            <span class="skill-tag">Alpaca API</span>
-                            <span class="skill-tag">Options Analytics</span>
-                            <span class="skill-tag">Risk Management</span>
-                            <span class="skill-tag">Portfolio Optimization</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-database"></i> Data & Backend</h3>
-                        <div class="skills-list">
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">Data Analytics</span>
-                            <span class="skill-tag">API Development</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">AWS</span>
-                        </div>
-                    </div>
+                <div class="section-label">Activity</div>
+                <h2>GitHub Activity</h2>
+                <div class="stats-grid">
+                    <img src="https://github-readme-stats.vercel.app/api?username=ernestprovo23&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=3b82f6&icon_color=3b82f6&text_color=e6edf3" alt="Ernest's GitHub Stats" loading="lazy">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ernestprovo23&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=3b82f6&text_color=e6edf3&hide=html,css" alt="Top Languages" loading="lazy">
+                </div>
+                <div class="streak-wrap">
+                    <img src="https://streak-stats.demolab.com?user=ernestprovo23&theme=github-dark-blue&hide_border=true&background=0d1117&ring=3b82f6&fire=3b82f6&currStreakLabel=3b82f6" alt="GitHub Streak" loading="lazy">
                 </div>
             </div>
         </section>
 
-        <section id="projects">
-            <div class="container">
-                <h2>Featured Projects</h2>
-                <div class="projects-grid">
-                    
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>Trading Bot Framework</h3>
-                            <div class="project-links">
-                                <a href="https://github.com/ernestprovo23/tradebot_opensource" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <p>Advanced algorithmic trading framework with options analytics, dynamic risk management, and portfolio optimization. Built with Python and MongoDB.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Alpaca API</span>
-                            <span class="tech-tag">Docker</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>Federal Contract Wizard</h3>
-                            <div class="project-links">
-                                <a href="#" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <p>TypeScript application for streamlining federal contracting processes with automated document generation and compliance checking.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">Government APIs</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>Foodee Planner AI</h3>
-                            <div class="project-links">
-                                <a href="#" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <p>AI-powered meal planning and food management system with intelligent recommendations and nutritional analysis.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">AI/ML</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">CSS</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>Data Kinetic Verse</h3>
-                            <div class="project-links">
-                                <a href="#" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <p>Comprehensive data analytics platform with interactive visualizations and real-time processing capabilities.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">MDX</span>
-                            <span class="tech-tag">Data Viz</span>
-                            <span class="tech-tag">Analytics</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>Company GPT</h3>
-                            <div class="project-links">
-                                <a href="#" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <p>Enterprise AI chatbot solution with custom training and deployment capabilities for business automation.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">OpenAI API</span>
-                            <span class="tech-tag">AI Agents</span>
-                            <span class="tech-tag">Enterprise</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>Codex DSE</h3>
-                            <div class="project-links">
-                                <a href="https://github.com/ernestprovo23/codex_dse" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <p>Lightweight coding agent that runs in your terminal, providing AI-powered development assistance and code generation.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">AI Agents</span>
-                            <span class="tech-tag">CLI Tools</span>
-                            <span class="tech-tag">Development</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <!-- Contact -->
         <section id="contact">
             <div class="container">
-                <h2>Get In Touch</h2>
-                <div class="contact-content">
-                    <p>I'm always interested in new opportunities and challenging projects. Let's connect!</p>
-                    <div class="contact-links">
-                        <a href="https://github.com/ernestprovo23" class="contact-link">
-                            <i class="fab fa-github"></i> GitHub
+                <div class="section-label">Let's Work Together</div>
+                <h2>Engage Fractionally</h2>
+                <div class="contact-grid">
+                    <div class="contact-text">
+                        <p>
+                            I take on a limited number of <strong>Fractional CAIO engagements</strong> per quarter.
+                            Ideal for mid-market companies ($10M–$200M revenue) that need senior AI leadership
+                            and hands-on delivery — not slide decks.
+                        </p>
+                        <div class="engagement-card">
+                            <h4>Typical Engagement</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> 90-day sprint with defined deliverables</li>
+                                <li><i class="fas fa-check"></i> Private AI deployment or data platform</li>
+                                <li><i class="fas fa-check"></i> Measurable ROI baseline → target</li>
+                                <li><i class="fas fa-check"></i> $43,500–$54,000 / cycle</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact-links-wrap">
+                        <a href="mailto:ernest@thedataexperts.us" class="contact-link primary-link">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>ernest@thedataexperts.us</span>
+                            </div>
                         </a>
-                        <a href="mailto:your.email@example.com" class="contact-link">
-                            <i class="fas fa-envelope"></i> Email
+                        <a href="https://thedataexperts.us" class="contact-link" target="_blank" rel="noopener">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <strong>Company</strong>
+                                <span>thedataexperts.us</span>
+                            </div>
                         </a>
-                        <a href="https://linkedin.com/in/yourprofile" class="contact-link">
-                            <i class="fab fa-linkedin"></i> LinkedIn
+                        <a href="https://github.com/ernestprovo23" class="contact-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <strong>GitHub</strong>
+                                <span>github.com/ernestprovo23</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ernest-provo" class="contact-link" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <span>linkedin.com/in/ernest-provo</span>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -230,8 +486,11 @@
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Ernest Provo. All rights reserved.</p>
+        <div class="container footer-inner">
+            <span class="footer-logo">EP</span>
+            <p>Ernest Provo · CEO, Data Science &amp; Engineering Experts, Inc.</p>
+            <p class="footer-address">8735 Dunwoody Place #5714 · Atlanta, GA 30350</p>
+            <p class="footer-copy">&copy; 2026 Ernest Provo. All rights reserved.</p>
         </div>
     </footer>
 

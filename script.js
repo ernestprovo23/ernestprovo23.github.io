@@ -13,15 +13,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar background change on scroll
+// Navbar scroll — dark theme stays dark, just intensify border
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.backdropFilter = 'blur(10px)';
+        navbar.style.background = 'rgba(13,17,23,.97)';
     } else {
-        navbar.style.background = '#fff';
-        navbar.style.backdropFilter = 'none';
+        navbar.style.background = 'rgba(13,17,23,.9)';
     }
 });
 
@@ -40,14 +38,15 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all project cards and skill categories
+// Observe cards for entrance animation
 document.addEventListener('DOMContentLoaded', function() {
-    const animateElements = document.querySelectorAll('.project-card, .skill-category');
-    
+    const animateElements = document.querySelectorAll(
+        '.project-card, .expertise-card, .about-card, .oss-card'
+    );
     animateElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         observer.observe(el);
     });
 });
@@ -79,23 +78,30 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Add skill tag hover effects
+// Mobile nav toggle
 document.addEventListener('DOMContentLoaded', function() {
-    const skillTags = document.querySelectorAll('.skill-tag');
-    
-    skillTags.forEach(tag => {
-        tag.addEventListener('mouseenter', function() {
-            this.style.transform = 'scale(1.1)';
-            this.style.background = '#3498db';
-            this.style.color = 'white';
+    const toggle = document.querySelector('.nav-toggle');
+    const menu   = document.querySelector('.nav-menu');
+    if (toggle && menu) {
+        toggle.addEventListener('click', function() {
+            const open = menu.style.display === 'flex';
+            menu.style.display = open ? 'none' : 'flex';
+            menu.style.flexDirection = 'column';
+            menu.style.position = 'absolute';
+            menu.style.top = '64px';
+            menu.style.left = '0';
+            menu.style.right = '0';
+            menu.style.background = 'rgba(13,17,23,.98)';
+            menu.style.padding = '16px 24px';
+            menu.style.borderBottom = '1px solid #30363d';
         });
-        
-        tag.addEventListener('mouseleave', function() {
-            this.style.transform = 'scale(1)';
-            this.style.background = '#e8f4f8';
-            this.style.color = '#2c3e50';
+        // Close mobile menu when a link is clicked
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.style.display = '';
+            });
         });
-    });
+    }
 });
 
 // Add project card click tracking (for analytics)
@@ -114,11 +120,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Mobile menu toggle (if needed later)
-function toggleMobileMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.toggle('active');
-}
 
 // Add scroll progress indicator
 document.addEventListener('DOMContentLoaded', function() {
@@ -129,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
         left: 0;
         width: 0%;
         height: 3px;
-        background: linear-gradient(90deg, #3498db, #667eea);
+        background: linear-gradient(90deg, #3b82f6, #6366f1);
         z-index: 9999;
         transition: width 0.3s ease;
     `;
